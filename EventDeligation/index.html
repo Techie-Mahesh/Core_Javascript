@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <ul id="catagory">
+        <li id="laptop">laptop</li>
+        <li id="mobile">mobile</li>
+        <li id="camera">camera</li>
+        <li id="watch">watch</li>
+      </ul>
+    </div>
+    <!-- In this example, we have a form with multiple input fields -->
+    <!-- Instead of adding an event listener to each input field, we add one event listener to the parent div with id "form" -->
+    <!-- Based on the clicked target element, we can determine which input field was interacted with and with data-uppercase attribute, we can determine if the input field should be converted to uppercase -->
+    <!-- Check if the target element has the data-uppercase attribute, If it does, convert the input value to uppercase -->
+    <div id="form">
+      <input type="text" id="input" data-uppercase />
+      <input type="text" id="panCard" />
+      <input type="text" id="email" data-uppercase />
+      <input type="text" id="mobile" />
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
