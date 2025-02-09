@@ -9,7 +9,7 @@ const myDebounce = (fn, delay) => {
     clearTimeout(timer);
     timer = setTimeout(() => {
       // Call the function with the arguments
-      fn.apply(this, args);
+      fn(...args);
     }, delay);
   };
 };

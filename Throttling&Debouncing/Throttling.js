@@ -4,11 +4,9 @@
 
 const myThrottle = (fn, delay) => {
   let flag = true;
-  return function () {
-    const context = this;
-    const args = arguments;
+  return function (...args) {
     if (flag) {
-      fn.apply(context, args);
+      fn(...args); // Call the function with the arguments
       flag = false;
       setTimeout(() => {
         flag = true;
