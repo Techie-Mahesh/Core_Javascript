@@ -1,0 +1,43 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    margin:20px
+}
+  
+h1 {
+    color: blueviolet;
+}
+
+.products {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+  
+.product {
+    width: 200;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+.title {
+    color: blueviolet;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 5px;
+}
+
+li {
+    color: rgb(226, 153, 43);
+}
