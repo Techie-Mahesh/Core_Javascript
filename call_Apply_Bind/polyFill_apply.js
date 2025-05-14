@@ -18,4 +18,4 @@ Function.prototype.myApply = function (context = {}, args) {
   return context.fn.apply(context, args);
 };
 
-purchaseCar.myApply(car); // BMW X5 purchased for 50000
+purchaseCar.myApply(car,[50000]); // BMW X5 purchased for 50000

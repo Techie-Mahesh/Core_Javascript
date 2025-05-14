@@ -3,7 +3,7 @@ const multiply = (x, y) => {
   console.log(x * y);
 };
 const multiplyByTwo = multiply.bind(this, 2, 3);
-multiplyByTwo(); // 10
+multiplyByTwo(); // 6
 const multiplyByThree = multiply.bind(this, 3)(5);
 const multiplyByFour = multiply.bind(this)(4, 5);
 
